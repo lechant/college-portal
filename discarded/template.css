@@ -1,0 +1,233 @@
+:root{
+	
+}
+body{
+	margin:0;
+	padding:0;
+	background:rgb(230,230,230);
+	font-size:1.2vw;
+}
+
+/*nav*/
+nav{
+	width:100%;
+	height:4vw;
+	background:white;
+	display:grid;
+	grid-template:auto/10% 16% 40% auto 13% 13%;
+	grid-template-areas:"img location search filter login singup";
+}
+nav img.nav-icon{
+	width:50%;
+	grid-area:img;
+}
+nav div.location-select{
+	width:80%;
+	height:70%;
+	border:0.15vw solid grey;
+	border-radius:0.2vw;
+	grid-area:location;
+	align-self:center;
+	justify-self:center;
+}
+nav div.location-select{
+	display:grid;
+	grid-template:100%/80% auto;
+	align-items:center;
+	justify-items:start;
+}
+nav div.location-select p{
+	margin:0;
+	padding:0;
+	font-size:1.4vw;
+	margin-left:1vw;
+}
+nav div.location-select img.location-select-icon{
+	height:40%;
+	justify-self:center;
+	user-select:none;
+	transition:0.2s;
+}
+nav div.location-select-list{
+	width:15vw;
+	height:20vw;
+	background:white;
+	position:absolute;
+	top:4vw;
+	left:11%;
+	display:none;
+}
+nav div.location-select-list p.location-select-list-group{
+	width:100%;
+	height:2vw;
+	font-size:1.1vw;
+	color:#ccc;
+	margin:0;
+	text-indent:0.8vw;
+}
+nav div.location-select-list  div.location-select-list-item{
+	width:100%;
+	height:3vw;
+	display:grid;
+	align-items:center;
+	font-size:1.3vw;
+	text-indent:1.5vw;
+}
+nav div.location-select-list  div.location-select-list-item P{
+	margin:0;
+	padding:0;
+}
+nav div.location-select-list  div.location-select-list-item:hover{
+	background:#ccc;
+}
+form.search{
+	width:100%;
+	height:100%;
+	align-items:center;
+	grid-area:search;
+	padding:0;
+	margin:0;
+	display:grid;
+	grid-template:100%/90% 10%;
+}
+form .submit-button-img{
+	width:100%;
+	height:80%;
+	background:grey;
+}
+form .search-bar{
+	width:100%;
+	height:80%;
+	border:0.2vw solid grey;
+	font-size:100%;
+}
+nav img#filter-option-img{
+	width:46%;
+	align-self:center;
+	justify-self:center;
+	grid-area:filter;
+}
+nav div.filter-option-menu{
+	width:20vw;
+	height:30vw;
+	background:white;
+	position:absolute;
+	top:4vw;
+	left:68%;
+	display:none;
+}
+nav div.filter-option-menu p{
+	width:100%;
+	padding:0;
+	margin:0;
+	text-indent:1vw;
+}
+
+/*body-section*/
+div.body-section{
+	width:100%;
+	height:100%;
+	overflow:auto;
+	display:grid;
+	grid-template:auto/70% 30%;
+}
+div.college-info-containers-section{
+	width:80%;
+	height:100%;
+	justify-self:end;
+}
+div.sidebar{
+	width:80%;
+	height:30%;
+	background:white;
+	border-radius:0.5vw;
+	margin-top:1vw;
+}
+
+/*college info*/
+div.college-info-containers{
+	width:95%;
+	height:13vw;
+	background:white;
+	margin-top:0.5vw;
+	margin-right:2vw;
+	display:grid;
+	grid-template:8% 15% 12% 8% auto/25% 50% auto;
+	grid-template-areas:". . ."
+						"img name name"
+						"img location ratings"
+						"img . ."
+						"img description .";
+	border-radius:0.2vw;
+}
+div.college-info-containers img.college-info-container-img,
+div.college-info-containers .img-placeholder{
+	width:11vw;
+	height:11vw;
+	align-self:start;
+	justify-self:center;
+	grid-area:img;
+	border-radius:2vw;
+	border:0;
+	background:grey;
+}
+div.college-info-containers img.college-info-container-img{
+	display:block
+}
+div.college-info-containers .img-placeholder{
+	display:none;
+}
+div.college-info-containers p{
+	margin:0;
+	padding:0;
+}
+div.college-info-containers p.college-info-name{
+	width:100%;
+	height:100%;
+	font-weight:bold;
+	font-size:1.7vw;
+	grid-area:name;
+}
+div.college-info-containers div.college-info-location{
+	width:100%;
+	height:100%;
+	grid-area:location;
+	display:grid;
+	grid-template:100%/8% auto;
+}
+div.college-info-containers img.college-info-location-icon{
+	height:100%;
+}
+div.college-info-containers p.college-info-location-name{
+	color:#999;
+	font-size:1.2vw;
+	align-self:center;
+}
+div.college-info-containers div.college-info-rating{
+	width:100%;
+	height:100%;
+	grid-area:ratings;
+	display:grid;
+	grid-template:auto/80% auto;
+}
+div.college-info-containers div.college-info-rating-bar{
+	width:100%;
+	height:80%;
+	align-self:center;
+	background:#eee;
+}
+div.college-info-containers div.college-info-rating-bar-progress{
+	height:100%;
+	width:20%;
+	background:green;
+}
+div.college-info-containers p.college-info-rating-num{
+	justify-self:center;
+	align-self:center;
+}
+div.college-info-containers div.college-info-container-description{
+	justify-self:start;
+	align-self:start;
+	grid-area:description;
+}
+

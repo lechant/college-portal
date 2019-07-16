@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/*For parallax website (Start) */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  line-height: 180%;
+  color: #666;
+  text-align: center;
+}
+.parallax1 {
+  background: url(img/firstpic.jpg);
+  min-height: 100%;
+}
+.parallax2 {
+  background: url(img/secondpic.jpeg);
+  min-height: 60%;
+}
+.parallax3 {
+  background: url(img/thirdpic.jpeg);
+  min-height: 40%;
+}
+.parallax4 {
+  background: url(img/fourthpic.jpg);
+  min-height: 100%;
+}
+.parallax1, .parallax2, .parallax3, .parallax4 {
+  position: relative;
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.heading {
+  position: absolute;
+  color: #fff;
+  font-size: 350%;
+  top: 38%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 10px #000;
+}
+.heading-sm {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  color: #fff;
+  font-size: 250%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px #000;
+}
+.two-col {
+  float: left;
+  width: 42%;
+  padding: 0 4%;
+  text-align: left;
+}
+section {
+  overflow: auto;
+  padding: 50px 80px;
+
+}
+.dark {
+  overflow: auto;
+  padding: 50px 80px;
+  background-color: #2F4F4F	;
+  color: #f2f2f2;
+}
+/*For parallax website (End) */
+
+
+/*For the search bar (Start)*/
+.search-field{
+	height: 30px;
+	padding: 10px;
+	border: none;
+	border-radius: 25px;
+	outline: none;
+	background-color:rgb(255,255,255,0.6)		
+}
+
+.college{
+	width: 850px;
+	position: center;
+}
+
+.btn-search{
+	height: 48px;
+	width: 155px;
+	background: #eaf8f3;
+	border: none;
+	color: #000;
+	border-radius: 25px;
+	position: center;
+	
+}
+
+.btn-search:hover{
+	background: #bdc7bd;
+	cursor: pointer;
+	
+}
+/*For the search bar (End)*/
+
+/*For top bar (Start) */
+.navbar {
+  width: 100%;
+  background-color: rgb(100, 100, 100);
+  overflow: auto;
+  position:sticky;
+  top:0;
+}
+
+/* Navbar links */
+.navbar a {
+  //position:sticky;
+  float: right;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #6D0B45;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+/*For top bar (End) */
+
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 250%;
+  }
+  .heading-sm {
+    font-size: 180%;
+  }
+  .two-col {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+/*For flipcard (start) */
+.flip3D{ width:240px; height:220px; margin:25px; float:left; }
+.flip3D > .front{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+	background:#FFFFFF; width:240px; height:240px; border-radius: 7px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+.flip3D > .back{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+	background:#FFFFFF; width:240px; height:240px; border-radius: 7px;
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+	color: #000000;
+	
+}
+.flip3D:hover > .front{
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.flip3D:hover > .back{
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+/*For flipcard (end) */
+
+
+/*For contact us (start) */
+input[type=text], select, textarea {
+  width: 91%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+/*For contact us (end) */

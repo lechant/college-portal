@@ -1,0 +1,12 @@
+.block-test {
+	background: blue;
+	padding: 10px;
+}
+
+.block-test p{
+border: 10px solid yellow;
+padding: 5px;
+color: white;
+width: 1000px;
+height: 250px;	
+}

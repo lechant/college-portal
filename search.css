@@ -1,0 +1,139 @@
+body {
+ margin: 0;
+ padding: 0;
+ background: url(img/firstpic2.jpg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+
+}
+
+#sort-select{
+    font-size: 15px;
+    color: white;
+    margin: 0;
+    background-color:black;
+    border-style: none;
+}
+
+.search-box {
+ position: absolute;
+ top: 20%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: #2f3640;
+ height: 40px;
+ border-radius: 40px;
+ padding: 10px;
+}
+
+.search-box:hover > .search-txt {
+ width: 500px;
+ padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+ background: white;
+ color: black;
+}
+
+.search-btn {
+ color: #e84118;
+ float: right;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: #2f3640;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: white;
+ cursor: pointer;
+}
+
+.search-btn > i {
+ font-size: 30px;
+}
+
+.search-txt {
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ padding: 0;
+ color: white;
+ font-size: 16px;
+ transition: 0.4s;
+ line-height: 40px;
+ width: 0px;
+ font-weight: bold;
+}
+
+/*For top bar (Start) */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #A9A9A9;
+}
+/*For top bar (End) */
+
+/*Result*/ 
+section {
+  overflow: auto;
+  padding: 400px 80px;
+
+}
+
+/* Description*/
+p {
+	margin: 10px;
+	font-size: 150%;
+	font-family: Gill Sans, Lucida Grande, Lucida Sans Unicode, Verdana, Helvetica, Arial, sans-serif;
+}
+
+/*For rating (choose any color you like) */
+.checked {
+  color:;
+}
+
+.block-test {
+
+margin: 10vw;
+padding: 2vw;
+}
+
+.block-test p{
+background: white;
+box-shadow: .2vw .2vw 0.2vw #888888;
+padding: 5px;
+color: black;
+width: 80vw;
+height: 20vw;	
+}
